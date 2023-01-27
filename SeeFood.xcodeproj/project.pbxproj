@@ -11,6 +11,10 @@
 		509791B729822B3D00AC2939 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509791B629822B3D00AC2939 /* ContentView.swift */; };
 		509791B929822B4000AC2939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 509791B829822B4000AC2939 /* Assets.xcassets */; };
 		509791BC29822B4000AC2939 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 509791BB29822B4000AC2939 /* Preview Assets.xcassets */; };
+		509791C32983090200AC2939 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509791C22983090200AC2939 /* ImagePicker.swift */; };
+		509791C529831B6700AC2939 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 509791C429831B6700AC2939 /* MobileNetV2.mlmodel */; };
+		509791C729831BA900AC2939 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509791C629831BA900AC2939 /* Classifier.swift */; };
+		509791CA29833B3000AC2939 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509791C929833B3000AC2939 /* ImageClassifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		509791B629822B3D00AC2939 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		509791B829822B4000AC2939 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		509791BB29822B4000AC2939 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		509791C22983090200AC2939 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		509791C429831B6700AC2939 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNetV2.mlmodel; path = ../../../Downloads/MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		509791C629831BA900AC2939 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+		509791C929833B3000AC2939 /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,10 @@
 		509791A829822B3D00AC2939 = {
 			isa = PBXGroup;
 			children = (
+				509791C929833B3000AC2939 /* ImageClassifier.swift */,
+				509791C22983090200AC2939 /* ImagePicker.swift */,
+				509791C629831BA900AC2939 /* Classifier.swift */,
+				509791C429831B6700AC2939 /* MobileNetV2.mlmodel */,
 				509791B329822B3D00AC2939 /* SeeFood */,
 				509791B229822B3D00AC2939 /* Products */,
 			);
@@ -137,7 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				509791C729831BA900AC2939 /* Classifier.swift in Sources */,
+				509791C32983090200AC2939 /* ImagePicker.swift in Sources */,
 				509791B729822B3D00AC2939 /* ContentView.swift in Sources */,
+				509791C529831B6700AC2939 /* MobileNetV2.mlmodel in Sources */,
+				509791CA29833B3000AC2939 /* ImageClassifier.swift in Sources */,
 				509791B529822B3D00AC2939 /* SeeFoodApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +286,7 @@
 				DEVELOPMENT_TEAM = W7VWJF3MJG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Using camera to take a picture";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +316,7 @@
 				DEVELOPMENT_TEAM = W7VWJF3MJG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Using camera to take a picture";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
